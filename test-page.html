@@ -3,29 +3,16 @@
 
 	<body>
 		<button id="btn">Turn me yellow!</button>
-        <a>Link 1</a>
-        <a>Link 2</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
 	</body>
 
 </html>
 
 <script>
-    console.log("hi")
-    const btn = document.getElementById("btn")
-    console.log("btn: ", btn)
-
     document.addEventListener("click", (e) => {
-        console.log("click!")
-        e.stopPropagation()
-        console.log("e: ", e.target)
+        console.log("click: ", e.target)
+        const link = e.target.closest("a")
+        console.log("link: ", link)
     })
-
-	if (btn) {
-        btn.addEventListener("click", () => {
-            console.log("yellow")
-            const aTag = btn.nextElementSibling
-            console.log("aTag: ", aTag)
-            aTag.style.backgroundColor = "yellow"
-        })
-    }
 </script>
