@@ -1481,6 +1481,10 @@ section,
   margin-bottom: 1rem;
 }
 
+.embedded-img.small {
+  width: 50% !important;
+}
+
 .use-case-section {
   margin: 0px 0px 40px 0px;
 }

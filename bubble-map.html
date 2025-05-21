@@ -97,8 +97,8 @@
           <!-- <div class="swiper-wrapper align-items-center"> -->
 
           <div class="swiper-slide x-small">
-              <img src="assets/img/portfolio/bubble_map.png" alt="">
-            </div>
+            <img src="assets/img/portfolio/bubble_map_2.png" alt="">
+          </div>
 
           <!-- <div class="swiper-slide">
               <img src="assets/img/portfolio/compact_results_table.png" alt="">
@@ -152,6 +152,8 @@
                       often misrepresents reality, as land area can visually overpower vote count. For example, large
                       rural counties with few voters appeared dominant simply due to their size. We needed a better way
                       to represent margins of victory without distorting perception.</p>
+                    <img class="embedded-img small" src="assets/img/portfolio/choropleth_map.png"
+                      alt="Bubble Map Screenshot">
                   </div>
 
                   <div class="use-case-section">
@@ -166,8 +168,14 @@
 
                   <div class="use-case-section">
                     <h3>Process</h3>
-                    <p>A few weeks before the election, I took full ownership of building the new bubble map. I designed
-                      it to size each bubble based on vote margin rather than geography, creating a much clearer sense
+                    <p>Journalism moves fast. My team and I were very used to quickly shipping products under tight
+                      deadlines. This feature was not prioritized on our roadmap, but my team and I felt very strongly
+                      that it provided necessary context to readers.
+                    </p>
+                    <p>
+                      Therefore, a week before the election, I consulted with my manager, and decided to take full
+                      ownership of building the new bubble map. I designed it to size each bubble based on vote margin
+                      rather than geography, creating a much clearer sense
                       of the race. I built the feature using D3 and React, and worked closely with our data pipeline to
                       ensure smooth integration. I thoroughly tested it across different states and edge cases, and we
                       launched it successfully for the 2022 midterms.</p>
@@ -182,15 +190,21 @@
                       <li>Ensured performance and responsiveness at scale</li>
                     </ul>
                     <!-- Optional image insert -->
-                    <!-- <img class="embedded-img" width="80%" src="assets/img/portfolio/bubble_map.png" alt="Bubble Map Screenshot"> -->
+                    <img class="embedded-img small" src="assets/img/portfolio/bubble_map_2.png"
+                      alt="Bubble Map Screenshot">
+                    <img class="embedded-img small" src="assets/img/portfolio/bubble_map_1.gif"
+                      alt="Bubble Map Screenshot">
                   </div>
 
                   <div class="use-case-section">
                     <h3>Challenges</h3>
                     <p>Shipping a new election visualization on a tight deadline was ambitious. I had to move quickly
                       while ensuring accuracy and resilience. One key takeaway was that while the bubble map solved
-                      several problems, it also introduced new interpretability challenges. Following its release, we created a plan to improve
-                      explanatory context and legend design in future iterations.</p>
+                      several problems, it also introduced new interpretability challenges. Some readers found it
+                      difficult to understand. We, therefore, created a an explanation under the visualization and also
+                      kept the choropleth map as an option that you could tab to.</p>
+                    <img class="embedded-img small" src="assets/img/portfolio/bubble_map.png"
+                      alt="Bubble Map Screenshot">
                   </div>
 
                   <div class="use-case-section">
@@ -224,7 +238,8 @@
                   <li><strong>Project URL</strong> <a
                       href="https://www.washingtonpost.com/election-results/2022/california/">https://www.washingtonpost.com/election-results/2022/california/</a>
                   </li>
-                  <li><a href="https://www.washingtonpost.com/election-results/2022/california/" class="btn-visit align-self-start">Visit
+                  <li><a href="https://www.washingtonpost.com/election-results/2022/california/"
+                      class="btn-visit align-self-start">Visit
                       Website</a></li>
                 </ul>
               </div>
