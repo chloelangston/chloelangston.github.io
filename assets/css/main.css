@@ -1485,6 +1485,10 @@ section,
   width: 50% !important;
 }
 
+.embedded-img.x-small {
+  width: 34% !important;
+}
+
 .use-case-section {
   margin: 0px 0px 40px 0px;
 }

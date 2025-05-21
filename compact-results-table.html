@@ -186,10 +186,14 @@
                         indicators</li>
                       <li>Made the table flexible for different election types (primary vs general)</li>
                       <li>Optimized spacing, alignment, and wrapping behavior for mobile</li>
-                      <li>Accounted for edge cases by enabling customizations (e.g. only using the last name when names are very long)</li>
+                      <li>Accounted for edge cases by enabling customizations (e.g. only using the last name when names
+                        are very long)</li>
                     </ul>
-                    <img class="embedded-img small" src="assets/img/portfolio/compact_results_table.png" alt="">
-                    <img class="embedded-img small" src="assets/img/portfolio/compact_results_table_5.png" alt="">
+                    <img class="embedded-img small" src="assets/img/portfolio/compact_results_table.png" alt=""
+                      style="display: block;">
+                    <!-- <img class="embedded-img x-small" src="assets/img/portfolio/compact_results_table_5.png" alt="" style="display: block;"> -->
+                    <img class="embedded-img" src="assets/img/portfolio/compact_results_table_6.png" alt="">
+
                     <!-- Optional image insert -->
                     <!-- <img class="embedded-img" width="80%" src="assets/img/portfolio/compact_results_table.png" alt="Compact Results Table Screenshot"> -->
                   </div>
@@ -199,6 +203,11 @@
                     <p>The main challenge was fitting meaningful results into a tight space without confusing users. The
                       reversed layout also required careful user testing and internal review. I made sure the component
                       handled a wide range of race types and edge cases across elections.</p>
+                    <p>It was especially challenging to account for all edge cases, including varying names and name lengths. We built in fallback behavior
+                      to wrap names when absolutely necessary, but thorough testing before each election is always crucial to ensure
+                      clarity. The component can be customized to show only last names if a candidate name is too long.
+                      However, in one election, two candidates had the same first initial and last name, so we had to be
+                      thoughtful in how we displayed them within such a small component.</p>
                   </div>
 
                   <div class="use-case-section">
@@ -230,9 +239,11 @@
                   <li><strong>Tools</strong> Figma, TypeScript, React, Stitches</li>
                   <li><strong>Project date</strong> April-May, 2022</li>
                   <li><strong>Project URL</strong> <a
-                    href="https://www.washingtonpost.com/elections/midterms-2022/">https://www.washingtonpost.com/elections/midterms-2022/</a></li>
-                <li><a href="https://www.washingtonpost.com/elections/midterms-2022/" class="btn-visit align-self-start">Visit
-                    Website</a></li>
+                      href="https://www.washingtonpost.com/elections/midterms-2022/">https://www.washingtonpost.com/elections/midterms-2022/</a>
+                  </li>
+                  <li><a href="https://www.washingtonpost.com/elections/midterms-2022/"
+                      class="btn-visit align-self-start">Visit
+                      Website</a></li>
                 </ul>
               </div>
             </div>
