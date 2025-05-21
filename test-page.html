@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<body>
-		<button id="btn">Turn me yellow!</button>
+<body>
+    <div style="height: 800px">
+        <button id="btn">Turn me yellow!</button>
         <a href="#">Link 1</a>
         <a href="#">Link 2</a>
-	</body>
+    </div>
+</body>
 
 </html>
 
 <script>
     document.addEventListener("click", (e) => {
-        console.log("click: ", e.target)
-        const link = e.target.closest("a")
-        console.log("link: ", link)
-    })
+        const link = e.target.closest("a");
+        console.log("link: ", link);
+    });
 </script>
