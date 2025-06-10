@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <title>DOM Test</title>
+</head>
+
 <body>
-    <div style="height: 800px">
-        <button id="btn">Turn me yellow!</button>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
+    
+    <div class="countdown-container">
+        <button id="start-btn">Start</button>
+        <button id="stop-btn">Stop</button>
+        <button id="reset-btn">Reset</button>
+
+        <span id="current-count"></span>
     </div>
+
+    <script>
+        let currentCount = 0
+        let intervalId;
+        const startEl = document.getElementById("start-btn")
+        const stopEl = document.getElementById("stop-btn")
+        const resetEl = document.getElementById("reset-btn")
+        const countEl = document.getElementById("current-count")
+
+        countEl.innerHTML = currentCount
+
+        startEl.addEventListener("click", () => {
+            intervalId = setInterval(() => {
+                currentCount = currentCount + 1
+                countEl.innerHTML = currentCount
+            }, 1000)
+        })
+
+        stopEl.addEventListener("click", () => {
+            clearInterval(intervalId)
+        })
+
+        resetEl.addEventListener("click", () => {
+            clearInterval(intervalId)
+            count = 0
+            countEl.innerHTML = count
+        })
+
+    </script>
 </body>
 
 </html>
-
-<script>
-    document.addEventListener("click", (e) => {
-        const link = e.target.closest("a");
-        console.log("link: ", link);
-    });
-</script>
